@@ -2,13 +2,13 @@
 var app = require('./config/server.js');
 
 
-var server = process.env.PORT || 8080;
-app.listen(server);
+//var server = process.env.PORT || 8080;
+//app.listen(server);
 
 //Parametrizar a porta de escuta
-/*var server = app.listen(80, 'localhost',function(){
+var server = app.listen(80, 'localhost',function(){
     console.log("servidor online");
-});*/
+});
 
 var io = require('socket.io').listen(server);
 

@@ -113,7 +113,8 @@
 		<script src="/socket.io/socket.io.js"></script>	
 
 		<script>
-			var socket = io('http://10.0.0.165:3001');
+			//var socket = io('http://10.0.0.165:3001');
+			socket = io('http://localhost');
 
 			//# pega o elemento pelo id
 			$('#enviar_mensagem').click( function(){
